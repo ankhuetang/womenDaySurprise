@@ -8,7 +8,9 @@ const Letter = () => {
 	return (
 		<div className='container-fluid letter-bg'>
 			<div className='row justify-content-center align-items-end head-row'>
-				<h1>Wake up baby I have something for you!!</h1>
+				<h1 className='letter-title'>
+					Wake up baby I have something for you!!
+				</h1>
 			</div>
 			<div className='row letter-row justify-content-center align-items-center'>
 				<Link to='/letter' className='link-svg'>

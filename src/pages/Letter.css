@@ -1,13 +1,18 @@
 .letter-bg {
 	height: 100vh;
 	width: 100%;
-	background-color: pink;
+	background-color: #ffb9b9;
 	position: relative;
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
 }
 
+.letter-title {
+	color: #ff8dc7;
+	font-weight: bold;
+	font-size: 50px;
+}
 .head-row {
 	height: 20%;
 }

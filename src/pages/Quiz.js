@@ -63,7 +63,7 @@ const Quiz = () => {
 					className='d-flex flex-column justify-content-center align-items-center 
         result-section'
 				>
-					<h3>A đùa thui em muốn gì cũng được hết</h3>
+					<h3>Em bé giỏi quá chúc mừng em!!</h3>
 					<Link to='/quachoem'>
 						<button className='custom-button'>Last surprise for nhiuu</button>
 					</Link>

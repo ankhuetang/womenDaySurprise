@@ -7,10 +7,14 @@
 
 .title {
 	padding-top: 5rem;
+	color: #ff8dc7;
+	font-weight: bold;
 }
 
 .sub-title {
 	padding-top: 6rem;
+	color: #ff8dc7;
+	font-weight: bold;
 }
 
 .heart-end {
@@ -25,6 +29,9 @@
 	bottom: 12rem;
 	left: 38%;
 	text-align: left;
+	color: #ffddd2;
+	font-size: 17px;
+	font-weight: bold;
 }
 
 .present-bg {
@@ -34,7 +41,7 @@
 	/* background: #f06a19; */
 	height: 100vh;
 	width: 100%;
-	background-color: pink;
+	background-color: #ffb9b9;
 	position: relative;
 	background-size: cover;
 	background-position: top;

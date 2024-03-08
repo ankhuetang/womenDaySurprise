@@ -88,9 +88,11 @@ const Tinder = () => {
 		<div className='tinder-bg'>
 			<div className='row container-fluid align-items-center height-20'>
 				{canSwipe ? (
-					<h1>Pick your favorite bf for your date</h1>
+					<h1 className='tinder-title'>Pick your favorite bf for your date</h1>
 				) : (
-					<h1>Đùa thôi tất cả các anh đẹp trai này sẽ là của em!!</h1>
+					<h1 className='tinder-title'>
+						Đùa thôi tất cả các anh đẹp trai này sẽ là của em!!
+					</h1>
 				)}
 			</div>
 			<div className='row container-fluid justify-content-center align-items-center height-60 cardContainer'>

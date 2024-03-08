@@ -65,7 +65,7 @@ const Present = () => {
 				<>
 					{jump === 'jump' && (
 						<h2 className='sub-title'>
-							Không ngon ăn thế đâu...Đố e bắt dc con này
+							Không ngon ăn thế đâu...Đố em bắt dc con này
 						</h2>
 					)}
 					<Confetti open={jump === 'jump'} />
