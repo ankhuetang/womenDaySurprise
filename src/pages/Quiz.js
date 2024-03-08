@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Flower from '../images/flower-svgrepo-com.svg';
 import './Quiz.css';
@@ -77,8 +78,24 @@ const Quiz = () => {
 						</div>
 					</div>
 					<div className='warning-section'>
-						{!correct && <h4>Em nghĩ thêm đi gần đúng rùi cố lên!</h4>}
-						{congrats && <h4>Paypi giỏi quá xalangheee</h4>}
+						{!correct && (
+							<motion.h4
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{ duration: 0.5 }}
+							>
+								Em nghĩ thêm đi gần đúng rùi cố lên!
+							</motion.h4>
+						)}
+						{congrats && (
+							<motion.h4
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{ duration: 0.5 }}
+							>
+								Paypi giỏi quá xalangheee
+							</motion.h4>
+						)}
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].choices.map((choice, index) => (

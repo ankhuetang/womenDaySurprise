@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import { motion } from 'framer-motion';
 import './Makeup.css';
 
 const Makeup = () => {
@@ -22,17 +22,34 @@ const Makeup = () => {
 	return (
 		<>
 			<div className='makeup-bg'>
-				<div className='row container-fluid align-items-end height-20 makeup-title'>
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 1.5 }}
+					className='row container-fluid align-items-end height-20 makeup-title'
+				>
 					{showNewImage ? (
-						<h1>Xinh ngất rồii, ấn vào hình để xem zai đẹp nhé</h1>
+						<motion.h1
+							initial={{ opacity: 0 }}
+							whileInView={{ opacity: 1 }}
+							transition={{ duration: 1.5 }}
+						>
+							Xinh ngất rồii, giờ đi săn giai thôi!
+						</motion.h1>
 					) : (
 						<h1>Tỉnh dậy thôi đến giờ xinh đẹp rồiii</h1>
 					)}
-				</div>
+				</motion.div>
 				<div className='row container-fluid height-80 custom-cursor'>
-					<div className='col-md-3 d-flex align-items-center justify-content-center makeup-text'>
+					<motion.div
+						whileHover={{
+							rotate: [-2, 2, -2, 2, -2, 0],
+							transition: { duration: 1.5, repeat: Infinity },
+						}}
+						className='col-md-3 d-flex align-items-center justify-content-center makeup-text'
+					>
 						Chào buổi sáng tình yêu, mới ngủ dậy nên đầu tóc hơi rối bời nhỉ
-					</div>
+					</motion.div>
 					<div
 						className={`col-md-6 d-flex align-items-center justify-content-center heart-container`}
 					>
@@ -53,11 +70,17 @@ const Makeup = () => {
 							/>
 						)}
 					</div>
-					<div className='col-md-3 d-flex align-items-center justify-content-center makeup-text'>
+					<motion.div
+						whileHover={{
+							rotate: [-2, 2, -2, 2, -2, 0],
+							transition: { duration: 1.5, repeat: Infinity },
+						}}
+						className='col-md-3 d-flex align-items-center justify-content-center makeup-text'
+					>
 						Mình trang điểm một chút nhé, anh chuẩn bị phấn má cho em dặm rồi
 						này.
 						<br /> **dặm kĩ 10 phát mới được nha
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</>

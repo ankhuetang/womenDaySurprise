@@ -6,6 +6,7 @@
 } */
 
 .title {
+	height: 20%;
 	padding-top: 5rem;
 	color: #ff8dc7;
 	font-weight: bold;
@@ -17,20 +18,28 @@
 	font-weight: bold;
 }
 
+.heart-wrapper {
+	height: 80%;
+	width: 50%;
+	background-image: url('../images/heart-svgrepo-com.svg');
+	background-size: 100%; /* Adjust as needed */
+	background-position: center; /* Adjust as needed */
+	background-repeat: no-repeat;
+}
 .heart-end {
 	z-index: 0;
-	height: 80%;
+	height: 100%;
 	width: auto;
 }
 
 .present-text {
 	z-index: 2;
-	position: absolute;
-	bottom: 12rem;
-	left: 38%;
+	/* position: absolute; */
+	/* bottom: 12rem;
+	left: 38%; */
 	text-align: left;
 	color: #ffddd2;
-	font-size: 17px;
+	font-size: 1rem;
 	font-weight: bold;
 }
 

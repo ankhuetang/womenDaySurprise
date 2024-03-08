@@ -1,8 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import './Present.css';
 
-import Heart from '../images/heart-svgrepo-com.svg';
-// import ConfettiGenerator from "./CanvasConfetti";
 import Confetti from './confetti/Confetti';
 
 const init_state = {
@@ -50,8 +48,7 @@ const Present = () => {
 		<div className='present-bg d-flex flex-column align-items-center'>
 			<h1 className='title'>Đến giờ nhận quà ròiiii</h1>
 			{reveal ? (
-				<div>
-					<img src={Heart} className='heart-end' alt='heart pic' />
+				<div className='heart-wrapper d-flex flex-column justify-content-center align-items-center'>
 					<p className='present-text'>
 						Xin chúc mừng paypi đã vượt qua series thử thách! <br /> Sau đây là
 						combo 8.3 dành cho em!! <br /> <br />
