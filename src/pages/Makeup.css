@@ -1,0 +1,63 @@
+/* .heart-img {
+	mask-border: radial-gradient(#000 69%, #0000 70%) 84.5%/50%;
+	clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+} */
+
+.makeup-bg {
+	height: 100vh;
+	width: 100%;
+	background-color: pink;
+	position: relative;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.height-20 {
+	height: 10%;
+}
+
+.height-80 {
+	height: 90%;
+}
+
+.height-50 {
+	height: 50%;
+}
+
+/* .heart-img {
+	height: 60%;
+	width: 60%;
+	mask: radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+		radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+		linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+	clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+} */
+
+.heart-img {
+	height: 50%;
+	width: 70%;
+}
+
+.heart-img-click {
+	transform: scale(1.2);
+}
+
+.makeup-brush {
+	height: 8rem;
+	width: auto;
+}
+
+.up-size {
+	height: 15rem;
+	width: auto;
+}
+
+.custom-cursor {
+	/* cursor: url('https://res.cloudinary.com/dvkugaw3b/image/upload/v1641562028/cursor_ad12rf.png'),
+		auto; */
+	cursor: url('https://res.cloudinary.com/dweffaoxw/image/upload/v1709862931/beauty-brush-svgrepo-com_azljmh.svg'),
+		auto;
+	/* cursor: url('https://res.cloudinary.com/dweffaoxw/image/upload/v1709760297/makeup-brush-1-svgrepo-com_2_nonrmu.png'),
+		auto; */
+}
