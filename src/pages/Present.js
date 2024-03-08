@@ -51,7 +51,7 @@ const Present = () => {
 			<h1 className='title'>Đến giờ nhận quà ròiiii</h1>
 			{reveal ? (
 				<div>
-					<img src={Heart} className='heart-end' />
+					<img src={Heart} className='heart-end' alt='heart pic' />
 					<p className='present-text'>
 						Xin chúc mừng paypi đã vượt qua series thử thách! <br /> Sau đây là
 						combo 8.3 dành cho em!! <br /> <br />
